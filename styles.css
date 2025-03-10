@@ -1,0 +1,1029 @@
+:root {
+  /* Dark theme (default) */
+  --primary-blue: #00f2ff;
+  --dark-blue: #0a1929;
+  --neon-pink: #ff00ff;
+  --neon-purple: #9d00ff;
+  --neon-cyan: #00ffff;
+  --dark-bg: #0a1929;
+  --panel-bg: rgba(10, 25, 41, 0.95);
+  --tech-border: rgba(0, 242, 255, 0.3);
+  --text-color: #ffffff;
+  --text-secondary: #00f2ff;
+  --ip-bg: rgba(10, 25, 41, 0.7);
+  --neon-yellow: #ffff00;
+  --hologram-color: rgba(0, 255, 255, 0.1);
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a1929 0%, #1a2b3c 100%);
+  color: var(--text-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background elements */
+.nature-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a1929 0%, #1a2b3c 100%);
+  opacity: 1;
+  z-index: -2;
+}
+
+/* Fallback background color in case image doesn't load */
+.nature-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, #0a1929, #142b44);
+  z-index: -3;
+}
+
+/* Tech circuit overlay */
+.nature-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Tech grid in background */
+.tech-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Cyber particles */
+.cyber-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(0, 242, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: pulse 4s ease-in-out infinite;
+}
+
+/* Container and layout adjustments */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 600px;
+  margin: 20px auto;
+  padding: 40px;
+  background: linear-gradient(165deg, 
+    rgba(6, 11, 25, 0.95) 0%, 
+    rgba(10, 25, 41, 0.85) 100%
+  );
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main title styling */
+.site-title {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.7);
+  z-index: 1000;
+  background: rgba(10, 25, 41, 0.95);
+  padding: 15px 40px;
+  border-radius: 8px;
+  border: 2px solid var(--neon-cyan);
+  letter-spacing: 4px;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 0 30px rgba(0, 242, 255, 0.3),
+    inset 0 0 20px rgba(0, 242, 255, 0.2);
+  white-space: nowrap; /* Keep title in one line */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-title h1 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 32px;
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Login section layout */
+#loginSection {
+  width: 100%;
+  max-width: 1000px;
+  margin: 80px auto 0;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: rgba(6, 11, 25, 0.8);
+  border: 1px solid rgba(0, 242, 255, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Left side - Terminal info */
+.login-left {
+  border-right: 1px solid rgba(0, 242, 255, 0.2);
+  padding-right: 40px;
+}
+
+.terminal-text {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--neon-cyan);
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(0, 242, 255, 0.05);
+  border-left: 4px solid var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+.system-info {
+  margin-top: 40px;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(0, 242, 255, 0.7);
+}
+
+.system-info-item {
+  margin: 15px 0;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 242, 255, 0.1);
+  color: rgba(0, 242, 255, 0.7);
+}
+
+/* Right side - Login form */
+.login-right {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.terminal-text {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px; /* Reduced max-width by 10% (from 500px to 450px) */
+  margin: 40px auto;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  height: 60px;
+  background: rgba(10, 25, 41, 0.9);
+  border: 2px solid rgba(0, 242, 255, 0.3);
+  border-radius: 4px;
+  padding: 0 25px;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--neon-cyan);
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  box-shadow: 
+    0 0 30px rgba(0, 242, 255, 0.2),
+    inset 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+input::placeholder {
+  color: rgba(0, 242, 255, 0.4);
+  letter-spacing: 1px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: 2px solid var(--neon-cyan);
+  border-radius: 4px;
+  padding: 0 25px;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--neon-cyan);
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background: rgba(0, 242, 255, 0.1);
+  box-shadow: 
+    0 0 30px rgba(0, 242, 255, 0.2),
+    inset 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 242, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+/* Security badge */
+.security-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  padding: 15px 30px;
+  background: rgba(6, 11, 25, 0.9);
+  border: 1px solid rgba(0, 242, 255, 0.2);
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(0, 242, 255, 0.7);
+}
+
+/* Stats footer */
+.tech-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(0, 242, 255, 0.7);
+  border-top: 1px solid rgba(0, 242, 255, 0.1);
+  overflow: hidden;
+}
+
+/* Expanded container styles for IP display */
+.container.expanded {
+  max-width: 95vw;
+  width: 95vw;
+  height: 85vh; /* Slightly reduced container height from 90vh to 85vh */
+  margin: 20px auto;
+  padding: 30px;
+  transition: all 0.5s ease;
+}
+
+/* IP Section styling */
+#ipSection {
+  width: 100%;
+  height: auto; /* Allow it to expand based on content */
+  padding-bottom: 60px; /* Add padding to ensure footer is visible */
+  display: flex;
+  flex-direction: column;
+}
+
+.ip-list {
+  margin-top: 25px;
+  height: auto;
+  overflow: hidden;
+}
+
+.tech-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tech-header h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 184, 255, 0.5);
+  margin: 0;
+  font-size: 18px;
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--neon-cyan);
+  border-radius: 50%;
+  position: relative;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* IP Items styling */
+.ip-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+  border-left: 3px solid var(--primary-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+.ip-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 184, 255, 0.3), transparent);
+  animation: scan 3s infinite;
+  animation-delay: calc(var(--i) * 0.5s);
+}
+
+@keyframes scan {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300px); }
+}
+
+.ip-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ip-location {
+  font-weight: bold;
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.ip-address {
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.copy-icon {
+  color: var(--primary-blue);
+  margin-left: 15px;
+  transition: all 0.2s;
+}
+
+.ip-item:hover .copy-icon {
+  color: var(--neon-cyan);
+  transform: scale(1.2);
+}
+
+/* Scrollbar styling */
+/* Sci-Fi Theme Styles */
+#ipDisplay {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-height: calc(80vh - 150px); /* Increased max-height for IP display significantly */
+  overflow-y: auto; /* Keep scrollbar for IP list */
+  padding-right: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Toast Message */
+.toast-hidden {
+  visibility: hidden;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 25, 41, 0.9);
+  border: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.toast-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 242, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 0 0 20px 0; /* Add bottom margin */
+  position: relative;
+  z-index: 1;
+}
+
+.tech-lines {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background: 
+    linear-gradient(90deg, var(--neon-cyan), transparent) 0 0/100% 2px no-repeat,
+    linear-gradient(90deg, var(--neon-cyan), transparent) 0 10px/80% 2px no-repeat,
+    linear-gradient(90deg, var(--neon-cyan), transparent) 0 20px/60% 2px no-repeat;
+  opacity: 0.5;
+}
+
+.status-indicator {
+  position: absolute;
+  top: -30px; /* Move it above the title */
+  right: 0;
+  background: rgba(0, 242, 255, 0.1);
+  border-left: 3px solid var(--neon-cyan);
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+  animation: statusPulse 2s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.terminal-text {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--neon-cyan);
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+input {
+  flex: 1;
+  background: rgba(10, 25, 41, 0.8);
+  border: 2px solid var(--tech-border);
+  border-radius: 8px;
+  padding: 15px;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 
+    0 0 20px rgba(0, 242, 255, 0.3),
+    inset 0 0 10px rgba(0, 242, 255, 0.1);
+}
+
+button {
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-pink));
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 30px rgba(0, 242, 255, 0.4),
+    0 0 60px rgba(255, 0, 255, 0.2);
+}
+
+.security-badge {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 3px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.tech-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(0, 242, 255, 0.7);
+  border-top: 1px solid rgba(0, 242, 255, 0.1);
+  overflow: hidden;
+}
+
+/* Encryption badge styling */
+.encryption-badge {
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Share Tech Mono', monospace;
+  color: rgba(0, 242, 255, 0.7);
+  border-top: 1px solid rgba(0, 242, 255, 0.1);
+  overflow: hidden;
+}
+
+/* Scanline effect */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+  z-index: 100;
+  opacity: 0.3;
+  animation: scanline 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(500%); }
+}
+
+/* Added noise texture for cyberpunk feel */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgXCgsdABiYT6QAAAP4SURBVGhD3Zo9aFRZFMd/M/N5JImj2WlcFNEVtkhjo4KNRVgXGxW0ULQyKgHB0tbKapuQRtBOWRG0MPiRDIqJrATfYsZ8zOTN3JvH3HvHQujcx72zVaKZl/edfVPOH16RM/fjd8//nnvPPec8BdmCAmwAeoDu9F8PUAJ2AgVbfxOYBSrAEvAd+BeoAuOO4zRs/bWRAgzgADLwQ0A/sP2POmpAALwF3gCjQAmoA1WA0PRnnUbr/1Ag+RgB24CTwC/AaUfwveAj8BwYQdbEPNA0QXBNgBZ+N/AT8CtQ6mDwJj4AL4CXwFf+DaRpAyDZ5lHgGNCX8eA1fgPGkLRbQFKutaRIuvwI3EXeQOchfFeYR0qpESTlWgJiWr8T+AW4AXRlOHAbtCD3gDdI6i1XiKTfRaSCnAZy1tjmgafAOFIHvgWiZf9p4AxwIOOB2/AZeIuUYKlZy4x0kfR4V8fANV4iW/OSLQ3Rtkwl42Dn+IBsxTMuoG6zVbqKAfwMXMl40Cl4CkzRIvsNKlYFOPLDSNfSlWHQKagDI8AUCygBFBzHyQHnkYLXlXHQKfgIfEGORZYeZLs9S3b6Q6dxFLl8fpv4ZBTFEv8+YF/GAafkBXLprGkW0bS9BDxCbmhZRxFZzBJSnmgW8TvwR8YBp+QD8A3JIM0ifgM+ksFlMSXfgElQuxYfqWNZR4iUbB+YKHIgpAYf+QBRdSEWsVsOZB1wSsrWMwTm1PqUdaQpqaGCaOK/Y8VPGdOIWKK1DjFwOetIU/IdVLnxKsArM70sgdQhKADbNAKpIMKnLI83Aqi0D0FE6JnGQmQ8LZEIHKMgqsiNK8vjiUXoZIwWzxBFkHWUCZtmq9z4VJCzWlbRgWzmXtNsFVH9gTTTrGEAOUl6xKfWF+SIk1UsYMoPSK+uqcyL0EEUKQY+olw0W+1LIRWlB9m9ZhWBmQ5+2R/LHvgSUp+yhnngNXKo9IkFMXIMIcLJrI0rFfT06oPhvkUWcpTsXDqLyBSC0yy35Dj6CfsiojfK0tTCMnKnmDbNdgWB1lfgLvI2Oh3jyJbsa7MtC0FGbxQ40+GgZ5ELYcU02x0EIHrYS8AfSHXpNL4hN89R09wQZo89PkqnkWZbp4KfQNKpZJpt0Qfib+4qopLs1IzhJvAS2YZbvGkXxECM5L8gRlIRaa1pxvgBsYB8BnwxzbbfA/Fb3Yl0JteQWpF2X1QHHiDbo2+abRGIRSGShteRtNjTofBnkbTyUaHXE2JRiIu5gRRzE2mlTQXpTSeBceSH3iIp9BO91j8xSBoMIS33A0i1WUZKplmA6ziy+Kk8ouj/jH8ADwEiEP32jpsAAAAASUVORK5CYII=');
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+  
+  .container {
+    margin-top: 50px; /* Further adjust top margin for better spacing */
+    padding: 15px; /* Reduce container padding on small screens */
+  }
+  
+  .header h1 {
+    font-size: 28px;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  #ipDisplay {
+    max-height: calc(70vh - 150px); /* Adjust max-height for smaller screens as well */
+  }
+  
+  .status-indicator {
+    top: -25px;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  #loginSection {
+    display: grid; /* Ensure it's a grid container */
+    grid-template-columns: 1fr; /* Single column layout for stacking */
+    gap: 15px; /* Reduce gap between stacked items */
+    padding: 20px; /* Reduce padding for the login section */
+    margin: 10px auto 0; /* Adjust margins */
+  }
+  
+  .login-left,
+  .login-right {
+    width: 100%; /* Full width for stacked sections */
+    padding: 15px; /* Reduce padding inside login sections */
+    box-sizing: border-box; /* Ensure padding is inside the width */
+    border-right: none; /* Remove right border */
+  }
+  
+  .login-left {
+    border-bottom: 1px solid rgba(0, 242, 255, 0.2); /* Bottom border to separate sections */
+    margin-bottom: 15px; /* Add margin below the left section */
+    padding-bottom: 20px; /* Add padding below text in left section */
+  }
+  
+  .login-right {
+    padding-top: 15px; /* Add padding above the login form */
+  }
+  
+  .security-badge {
+    position: relative; /* Reset position to relative for stacking */
+    right: auto; /* Reset right positioning */
+    bottom: auto; /* Reset bottom positioning */
+    margin: 15px auto 0; /* Center and add top margin below login sections */
+    text-align: center; /* Center the badge text */
+  }
+  
+  .input-group {
+    margin: 20px auto; /* Adjust input group margin */
+  }
+}
+
+#ipDisplay {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.ip-item {
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.title-spacing {
+  margin-top: 30px; /* Adds space after the title */
+}
+
+/* Modify container styles for post-login state */
+.container.expanded {
+  max-width: 95vw;
+  width: 95vw;
+  height: 85vh; /* Slightly reduced container height from 90vh to 85vh */
+  margin: 20px auto;
+  padding: 30px;
+  transition: all 0.5s ease;
+}
+
+/* Modify IP list layout */
+.ip-list {
+  margin-top: 25px;
+  height: calc(100% - 150px); /* Adjust based on header and footer height */
+  overflow: hidden;
+}
+
+#ipDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-height: calc(100vh - 350px); /* Increased max-height for IP display significantly */
+  overflow-y: auto; /* Keep scrollbar for IP list */
+  padding-right: 15px;
+  margin-top: 100px;
+}
+
+.ip-item {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container.expanded {
+    width: 98vw;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #ipDisplay {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .container.expanded {
+    height: 95vh;
+    margin: 10px auto;
+  }
+}
+
+.ip-item:active {
+  transform: scale(0.98);
+}
+
+/* Toast Message Styles */
+.toast-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    z-index: 1000;
+    min-width: 300px;
+    max-width: 80%;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--tech-border);
+    animation: toastFade 0.3s ease-in-out;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.toast-icon {
+    font-size: 24px;
+}
+
+.toast-text {
+    text-align: left;
+    flex: 1;
+}
+
+/* Success Toast Specific */
+.success-toast {
+    background: linear-gradient(45deg, var(--primary-blue), var(--neon-cyan));
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+/* Error Toast Specific */
+.error-toast {
+    background: linear-gradient(45deg, #ff3e3e, #ff0055);
+    color: white;
+    box-shadow: 0 0 30px rgba(255, 62, 62, 0.3);
+}
+
+/* Progress bar for error toast */
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    animation: progress 2s linear;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Animations */
+@keyframes toastFade {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -30%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .toast-message {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .toast-icon {
+        font-size: 20px;
+    }
+}
+
+#nodeCount, #uptime {
+  transition: opacity 0.2s ease-in-out;
+  display: inline-block;
+}
+
+/* Add this class to hide the title when showing IP section */
+.hidden-title {
+  display: none !important;
+}
+
+/* Satellite container styling */
+.satellite-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  margin-bottom: 20px; /* Space below the title */
+  position: relative; /* For positioning the satellite animation */
+}
+
+/* Satellite icon styling */
+.satellite-container i {
+  font-size: 24px; /* Size of the satellite icon */
+  animation: moveSatellite 2s linear infinite; /* Animation for moving effect */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Title styling */
+.nexus-title {
+  font-family: 'Orbitron', sans-serif; /* Use a sci-fi font */
+  font-size: 24px; /* Size of the title */
+  color: var(--neon-cyan); /* Color of the title */
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.7); /* Glow effect */
+}
+
+/* Animation for the satellite */
+@keyframes moveSatellite {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to start */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+  #loginSection {
+    flex-direction: column; /* Stack login sections vertically on smaller screens */
+    align-items: center; /* Center items in the stacked login section */
+  }
+  .login-left,
+  .login-right {
+    width: 100%; /* Make login sections full width on smaller screens */
+    margin-bottom: 20px; /* Add spacing between stacked sections */
+    padding: 20px; /* Add padding to the login sections */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  .security-badge {
+    margin-top: 20px; /* Add some space above the security badge when stacked */
+  }
+  .login-left {
+    text-align: center; /* Center text in the left login section */
+  }
+  .login-right {
+    text-align: center; /* Center text in the right login section */
+  }
+  .terminal-text {
+    font-size: 1.1em; /* Slightly reduce font size for terminal text on smaller screens */
+  }
+  .system-info-item {
+    font-size: 0.9em; /* Slightly reduce font size for system info items on smaller screens */
+  }
+  .input-group {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: stretch; /* Make button full width */
+  }
+  input {
+    margin-bottom: 10px; /* Add margin below input when stacked */
+    text-align: center; /* Center text in input field */
+  }
+  button {
+    width: 100%; /* Make button full width when stacked */
+  }
+  .security-badge {
+    font-size: 0.9em; /* Slightly reduce font size for security badge on smaller screens */
+  }
+}
+
