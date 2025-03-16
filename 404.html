@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404 Error - Page Not Found">
+    <title>404 Error - Page Not Found</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #00f7ff;
+            --secondary-color: #ff0055;
+            --background-color: #0a0a1a;
+            --text-color: #ffffff;
+            --terminal-bg: #12121f;
+            --glow-color: rgba(0, 247, 255, 0.5);
+            --accent-color: #ff00ff;
+            --hologram-color: rgba(0, 247, 255, 0.15);
+            --cyber-color: #0ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            background: radial-gradient(circle at center, transparent, var(--background-color) 70%);
+        }
+
+        .cyber-glitch {
+            animation: cyber-glitch 4s infinite;
+            position: relative;
+        }
+
+        @keyframes cyber-glitch {
+            0% { text-shadow: 2px 0 var(--cyber-color), -2px 0 var(--secondary-color); }
+            25% { text-shadow: -2px 0 var(--cyber-color), 2px 0 var(--secondary-color); }
+            50% { text-shadow: 2px 0 var(--secondary-color), -2px 0 var(--cyber-color); }
+            75% { text-shadow: -2px 0 var(--secondary-color), 2px 0 var(--cyber-color); }
+            100% { text-shadow: 2px 0 var(--cyber-color), -2px 0 var(--secondary-color); }
+        }
+
+        .error-gif {
+            position: relative;
+            width: 400px;
+            height: 225px;
+            margin: 2rem 0;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 
+                0 0 20px var(--glow-color),
+                inset 0 0 20px var(--glow-color);
+        }
+
+        .error-gif::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                45deg,
+                transparent 0%,
+                var(--hologram-color) 45%,
+                var(--hologram-color) 55%,
+                transparent 100%
+            );
+            animation: scan-effect 4s linear infinite;
+        }
+
+        .error-gif img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes scan-effect {
+            0% { transform: translateX(-100%) skewX(-45deg); }
+            100% { transform: translateX(200%) skewX(-45deg); }
+        }
+
+        .glitch-wrapper {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .glitch {
+            font-size: 8rem;
+            font-weight: 900;
+            position: relative;
+            text-shadow: 
+                0 0 10px var(--primary-color),
+                0 0 20px var(--primary-color),
+                0 0 40px var(--primary-color);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 
+                    0 0 10px var(--primary-color),
+                    0 0 20px var(--primary-color),
+                    0 0 30px var(--primary-color);
+            }
+            to {
+                text-shadow: 
+                    0 0 20px var(--primary-color),
+                    0 0 30px var(--primary-color),
+                    0 0 40px var(--primary-color),
+                    0 0 50px var(--primary-color);
+            }
+        }
+
+        .error-message {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(18, 18, 31, 0.7);
+            border: 1px solid var(--primary-color);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .error-message h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            animation: cyber-glitch 2s infinite;
+        }
+
+        .error-message p {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--text-color);
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px var(--glow-color);
+        }
+
+        .back-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg) translateY(100%);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .back-button:hover {
+            color: var(--background-color);
+            box-shadow: 0 0 30px var(--glow-color);
+        }
+
+        .back-button:hover::before {
+            transform: translate(-50%, -50%) rotate(45deg) translateY(0);
+        }
+
+        .cyber-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .cyber-lines::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                var(--hologram-color) 0px,
+                var(--hologram-color) 1px,
+                transparent 1px,
+                transparent 30px
+            );
+        }
+
+        .cyber-lines::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                var(--hologram-color) 0px,
+                var(--hologram-color) 1px,
+                transparent 1px,
+                transparent 30px
+            );
+        }
+
+        @media (max-width: 768px) {
+            .glitch {
+                font-size: 4rem;
+            }
+            
+            .error-message h2 {
+                font-size: 1.5rem;
+            }
+            
+            .error-message p {
+                font-size: 1rem;
+            }
+            
+            .back-button {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+
+            .error-gif {
+                width: 300px;
+                height: 169px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="cyber-lines"></div>
+    <main class="content">
+        <div class="glitch-wrapper">
+            <div class="glitch cyber-glitch">404</div>
+        </div>
+
+        <div class="error-gif">
+            <img src="error.gif" alt="Error Animation" loading="lazy">
+        </div>
+
+        <div class="error-message">
+            <h2>System Breach Detected</h2>
+            <p>CRITICAL_ERROR: The requested neural pathway has been corrupted. Quantum reconstruction protocols initiated. Please stand by...</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">
+            Return to Base
+        </button>
+    </main>
+
+    <script>
+        // Three.js background animation
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        container.appendChild(renderer.domElement);
+
+        // Create particles
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 5000;
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for(let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 5;
+        }
+
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.005,
+            color: 0x00f7ff,
+            transparent: true,
+            opacity: 0.8
+        });
+
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+
+        camera.position.z = 2;
+
+        // Animation
+        function animate() {
+            requestAnimationFrame(animate);
+            particlesMesh.rotation.x += 0.0005;
+            particlesMesh.rotation.y += 0.0005;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // GSAP Animations
+        gsap.from(".glitch", {
+            duration: 1,
+            y: -100,
+            opacity: 0,
+            ease: "power4.out"
+        });
+
+        gsap.from(".error-gif", {
+            duration: 1,
+            scale: 0,
+            opacity: 0,
+            delay: 0.3,
+            ease: "back.out(1.7)"
+        });
+
+        gsap.from(".error-message", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            delay: 0.5,
+            ease: "power4.out"
+        });
+
+        gsap.from(".back-button", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            delay: 1,
+            ease: "power4.out"
+        });
+    </script>
+</body>
+</html>
