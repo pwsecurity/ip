@@ -13,7 +13,7 @@ const users = {
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  tanbir4d: [
+  tanvir4d: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
@@ -313,7 +313,7 @@ function downloadZipFile() {
     case 'borhan2df':
       zipFileName = 'Borhan.zip';
       break;
-    case 'tanbir4d':
+    case 'tanvir4d':
       zipFileName = 'Tanbir.zip';
       break;
     case 'riyad33f':
