@@ -3,31 +3,69 @@ let currentUser = null;
 
 // Password Database
 const users = {
-  user1: [
+  nokib3d: [
     { ip: "54.217.264.186:9163:newyorku1tmbile:akksgffdsa6542", location: "New York" },
-    { ip: "x286.fxdx.in:25672:bmusproxy21ghf35NOT:jChftftlyN1j9", location: "California" },
-    { ip: "x453.fxdx.in:13916:bmusproxy313422:5Xz77ybbVaT", location: "Florida" },
-    { ip: "x435.fxdx.in:13773:bmusproxy031953:otbbfnYsP1XT", location: "Georgia" },
-    { ip: "216.244.247.174:8150:texas03vz:txytg456asdfas", location: "Texas" }
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  user2: [
+  borhan2df: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  user3: [
-    { ip: "x287.fxdx.in:15572:bmusproxy210635NOT:jC2kttlyN1j9", location: "California" },
-    { ip: "207.244.237.174:3160:texas03vz:tx321456asdfas", location: "Texas" },
-    { ip: "68.217.244.186:9093:newyork01tmbile:asfsgffdsa6542", location: "New York" },
-    { ip: "x286.fxdx.in:25672:bmusproxy210635NOT:jChftftlyN1j9", location: "California 2" },
-    { ip: "206.244.237.174:8100:texas03vz:txytg456asdfas", location: "Texas 2" },
-    { ip: "68.217.244.186:9093:newyork01tmbile:asfsgffdsa6542", location: "New York 2" },
-    { ip: "x286.fxdx.in:25672:bmusproxy210635NOT:jChftftlyN1j9", location: "California 3" },
-    { ip: "206.244.237.174:8100:texas03vz:txytg456asdfas", location: "Texas 3" },
-    { ip: "68.217.244.186:9093:newyork01tmbile:asfsgffdsa6542", location: "New York 3" },
-    { ip: "x286.fxdx.in:25672:bmusproxy210635NOT:jChftftlyN1j9", location: "California 4" },
-    { ip: "206.244.237.174:8100:texas03vz:txytg456asdfas", location: "Texas 4" },
-    { ip: "x473.fxdx.in:13946:bmusproxy313422:5Xz77yjhmVaT", location: "Florida" }
+  tanbir4d: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  riyad33f: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  noyon7fd: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  jihad28: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  alif9g: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  tonmoy112: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  hridoy55: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  diba11d: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  tahsin22d: [
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "                 03 March 2025               ", location: "Birth" },
+    { ip: "                 03 April 2025               ", location: "Death" }
+  ],
+  comon: [
+    { ip: "207.244.246.180:10100:tx2414fs:c5f4adsgf7", location: "Texas" },
+    { ip: "74.208.127.83:7100:ca541f54d:c5gf4s", location: "California" },
+    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York" },
+    { ip: "46.21.151.242:9023:ny74511:ca5sd4fg5a", location: "New York 2" },
+    { ip: "67.217.244.3:9001:fl144sa5:csfgfa4g", location: "Florida" },
+    { ip: "46.21.151.242:9025:ms244f455f:ch5fg4ghh", location: "Georgia" },
+    { ip: "46.21.151.242:8086:nj854125d:c85dsf4df", location: "Georgia 2" }
   ]
 };
 
@@ -269,14 +307,56 @@ function downloadZipFile() {
   let zipFileName;
   
   switch(currentUser) {
-    case 'user1':
+    case 'nokib3d':
       zipFileName = 'Nokib.zip';
       break;
-    case 'user2':
-      zipFileName = 'dana.zip';
+    case 'borhan2df':
+      zipFileName = 'Borhan.zip';
       break;
-    case 'user3':
-      zipFileName = 'aida.zip';
+    case 'tanbir4d':
+      zipFileName = 'Tanbir.zip';
+      break;
+    case 'riyad33f':
+      zipFileName = 'Riyad.zip';
+      break;
+    case 'noyon7fd':
+      zipFileName = 'Noyon.zip';
+      break;
+    case 'jihad28':
+      zipFileName = 'Jihad.zip';
+      break;
+    case 'alif9g':
+      zipFileName = 'Alif.zip';
+      break;
+    case 'tonmoy112':
+      zipFileName = 'Tonmoy.zip';
+      break;
+    case 'hridoy55':
+      zipFileName = 'Hridoy.zip';
+      break;
+    case 'diba11d':
+      zipFileName = 'Diba.zip';
+      break;
+    case 'tahsin22d':
+      zipFileName = 'Tahsin.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'comon':
+      zipFileName = 'comon.zip';
       break;
     default:
       return;
