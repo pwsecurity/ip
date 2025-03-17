@@ -4,57 +4,57 @@ let currentUser = null;
 // Password Database
 const users = {
   nokib3d: [
-    { ip: "54.217.264.186:9163:newyorku1tmbile:akksgffdsa6542", location: "New York" },
+    { ip: "54.217.264.186:9163:newyorku1tmbile:akksgffdsa6542", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   borhan2df: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   tanbir4d: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   riyad33f: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   noyon7fd: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   jihad28: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   alif9g: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   tonmoy112: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   hridoy55: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   diba11d: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
   tahsin22d: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "IP Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
