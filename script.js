@@ -58,7 +58,7 @@ const users = {
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  comon: [
+  common: [
     { ip: "207.244.246.180:10100:tx2414fs:c5f4adsgf7", location: "Texas" },
     { ip: "74.208.127.83:7100:ca541f54d:c5gf4s", location: "California" },
     { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York" },
@@ -355,8 +355,8 @@ function downloadZipFile() {
     case 'g':
       zipFileName = 'g.zip';
       break;
-    case 'comon':
-      zipFileName = 'comon.zip';
+    case 'common':
+      zipFileName = 'common.zip';
       break;
     default:
       return;
