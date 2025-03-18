@@ -4,68 +4,115 @@ let currentUser = null;
 // Password Database
 const users = {
   nokib3d: [
-    { ip: "54.217.264.186:9163:newyorku1tmbile:akksgffdsa6542", location: "New York" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
+    { ip: "207.244.246.180:10100:tx2414fs:c5f4adsgf7", location: "Texas Node" },
+    { ip: "74.208.127.83:7100:ca541f54d:c5gf4s", location: "California Node" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   borhan2df: [
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "67.217.244.3:9001:fl144sa5:csfgfa4g", location: "Florida" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tanbir4d: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
+    { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
+    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   riyad33f: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
+    { ip: "46.21.151.242:9023:ny74511:ca5sd4fg5a", location: "New York 2 NODE" },
+    { ip: "46.21.151.242:8086:nj854125d:c85dsf4df", location: "Georgia NODE" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   noyon7fd: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
+    { ip: "67.217.243.124:5039:ny21141:c56s4f5f", location: "New York 3 NODE" },
+    { ip: "67.217.244.189:9705:fl65417cx:cghffrgd", location: "Florida 2 NODE" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   jihad28: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
+    { ip: "207.244.246.180:10100:tx2414fs:c5f4adsgf7", location: "Texas NODE" },
+    { ip: "46.21.151.242:7010:fl1244f4:cs4f5sf", location: "Florida 3 NODE" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   alif9g1: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "                 03 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tonmoy1121: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "                 03 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   hridoy551: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "                 03 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   diba11d1: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "                 03 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tahsin22d1: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" }
+    { ip: "                 03 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  comon1: [
-    { ip: "207.244.246.180:10100:tx2414fs:c5f4adsgf7", location: "Texas" },
-    { ip: "74.208.127.83:7100:ca541f54d:c5gf4s", location: "California" },
-    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York" },
-    { ip: "46.21.151.242:9023:ny74511:ca5sd4fg5a", location: "New York 2" },
-    { ip: "67.217.244.3:9001:fl144sa5:csfgfa4g", location: "Florida" },
-    { ip: "46.21.1515f:ch5fg4ghh", location: "Georgia" },
-    { ip: "46.21.125d:c85dsf4df", location: "Georgia 2" },
+  tareq3d: [
+    { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
+    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  shahadat3d: [
+    { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
+    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  niloy3d: [
+    { ip: "207.244.246.180:10100:tx2414fs:c5f4adsgf7", location: "NODE 01" },
+    { ip: "74.208.127.83:7100:ca541f54d:c5gf4s", location: "NODE 02" },
+    { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "NODE 03" },
+    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "NODE 04" },
+    { ip: "46.21.151.242:9023:ny74511:ca5sd4fg5a", location: "NODE 05" },
+    { ip: "                 18 March 2025               ", location: "Birth" },
+    { ip: "                 16 April 2025               ", location: "Death" },
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  com1: [
+    { ip: "207.244.246.1sgf7", location: "Texas" },
+    { ip: "74.208.127.8:c5gf4s", location: "California" },
+    { ip: "67.217.244czv4wef", location: "New York" },
+    { ip: "46.21.151.4fg5a", location: "New York 2" },
+    { ip: "67.217.244.fgfa4g", location: "Florida" },
+    { ip: "46.21.1514ghh", location: "Georgia" },
+    { ip: "46.21.125d:dsf4df", location: "Georgia 2" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ]
 };
@@ -341,8 +388,8 @@ function downloadZipFile() {
     case 'tahsin22d':
       zipFileName = 'Tahsin.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'niloy3d':
+      zipFileName = 'Niloy.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
