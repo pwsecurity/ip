@@ -106,13 +106,15 @@ const users = {
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   com1: [
-    { ip: "207.244.246.1sgf7", location: "Texas" },
-    { ip: "74.208.127.8:c5gf4s", location: "California" },
-    { ip: "67.217.244czv4wef", location: "New York" },
-    { ip: "46.21.151.4fg5a", location: "New York 2" },
-    { ip: "67.217.244.fgfa4g", location: "Florida" },
-    { ip: "46.21.1514ghh", location: "Georgia" },
-    { ip: "46.21.125d:dsf4df", location: "Georgia 2" },
+    { ip: "marctran57@gmail.com", location: "Texas" },
+    { ip: "richardmaynard049@gmail.com", location: "California" },
+    { ip: "williamsclarence955@gmail.com", location: "New York" },
+    { ip: "jk7824115@gmail.com", location: "New York 2" },
+    { ip: "difrancojohn95@gmail.com", location: "Florida" },
+    { ip: "lewisluis194@gmail.com", location: "Georgia" },
+    { ip: "lewisluis741@gmail.com", location: "Georgia 2" },
+    { ip: "ktimothy611@gmail.com", location: "Georgia 2" },
+    { ip: "varneywalter6@gmail.com", location: "Georgia 2" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ]
 };
