@@ -8,7 +8,7 @@ const users = {
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  tareq3d: [
+  borhan2df: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
