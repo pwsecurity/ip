@@ -13,22 +13,22 @@ const users = {
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  tanbir4d1: [
+  tanbir4d: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  riyad33f1: [
+  riyad33f: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  noyon7fd1: [
+  noyon7fd: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
   ],
-  jihad281: [
+  jihad28: [
     { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" }
