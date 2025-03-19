@@ -51,7 +51,7 @@ const users = {
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  alif9g1: [
+  alif9g: [
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "67.217.244.189:9093:tx24f4d2:v5as46g", location: "Texas 2 NODE" },
     { ip: "46.21.151.242:9025:ms244f455f:ch5fg4ghh", location: "Georgia 2 NODE" },
