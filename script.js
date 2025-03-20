@@ -7,6 +7,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -15,6 +16,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -23,6 +25,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -31,6 +34,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -39,6 +43,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -47,6 +52,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -55,6 +61,7 @@ const users = {
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
     { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
