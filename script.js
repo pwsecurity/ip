@@ -469,9 +469,6 @@ function downloadZipFile() {
     case 'alif9g':
       zipFileName = 'Alif.zip';
       break;
-    case 'tonmoy112':
-      zipFileName = 'Tonmoy.zip';
-      break;
     case 'hridoy55':
       zipFileName = 'Hridoy.zip';
       break;
