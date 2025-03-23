@@ -168,8 +168,8 @@ const users = {
     { ip: "74.208.127.83:7100:ca541f54d:c5as6f4", location: "California 2 Node" },
     { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "67.217.244.186:9093:ny2445d:sf954twwq", location: "New York 2 Node" },
-    { ip: "                 03 March 2025               ", location: "Birth" },
-    { ip: "                 03 April 2025               ", location: "Death" },
+    { ip: "                 23 March 2025               ", location: "Birth" },
+    { ip: "                 21 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   diba11d1: [
