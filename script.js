@@ -146,8 +146,19 @@ const users = {
     { ip: "                 21 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  tonmoy1121: [
-    { ip: "207.244.237.174:8100:texas03vz:tx321456asdfas", location: "Texas" },
+  tonmoy112: [
+    { ip: "67.217.244.3:9001:fl144sa5:c65asf", location: "Florida Node" },
+    { ip: "67.217.244.186:5790:fl5141f74:c5as4f", location: "Florida 2 Node" },
+    { ip: "46.21.151.242:8086:nj854125d:nj987sdaf", location: "Georgia Node" },
+    { ip: "46.21.151.242:9025:ms244f455f:ms764sdf", location: "Georgia 2 Node" },
+    { ip: "207.244.246.180:10100:tx2414fs:c656a5s4f", location: "Texas Node" },
+    { ip: "67.217.244.189:9093:tx24f4d2:c65as4f", location: "Texas 2 Node" },
+    { ip: "209.126.11.99:7000:ca44541d4we:c45asf5a4", location: "California Node" },
+    { ip: "74.208.127.83:7100:ca541f54d:c5as6f4", location: "California 2 Node" },
+    { ip: "67.217.243.238:10580:ca24fd14ds:c4as5f13", location: "California 3 Node" },
+    { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
+    { ip: "67.217.244.186:9093:ny2445d:sf954twwq", location: "New York 2 Node" },
+    { ip: "46.21.151.242:9033:c244f32s:c5sf4a95", location: "New York 3 Node" },
     { ip: "                 03 March 2025               ", location: "Birth" },
     { ip: "                 03 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -472,8 +483,8 @@ function downloadZipFile() {
     case 'hridoy55':
       zipFileName = 'Hridoy.zip';
       break;
-    case 'diba11d':
-      zipFileName = 'Diba.zip';
+    case 'tonmoy112':
+      zipFileName = 'Tonmoy.zip';
       break;
     case 'tahsin22d':
       zipFileName = 'Tahsin.zip';
