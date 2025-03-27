@@ -165,6 +165,7 @@ const users = {
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   hridoy39: [
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "67.217.244.186:9093:ny2445d:sf954twwq", location: "New York 2 Node" },
     { ip: "46.21.151.242:9033:c244f32s:c5sf4a95", location: "New York 3 Node" },
@@ -187,6 +188,7 @@ const users = {
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tonmoy224: [
+    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "46.21.151.242:9023:ny74511:ny7539ywef", location: "New York Node" },
     { ip: "67.217.244.186:9093:ny2445d:sf954twwq", location: "New York 2 Node" },
     { ip: "46.21.151.242:9033:c244f32s:c5sf4a95", location: "New York 3 Node" },
