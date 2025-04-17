@@ -87,17 +87,6 @@ const users = {
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   niloy3d: [
-    { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
-    { ip: "74.208.205.97:9001:tx5747df5s:tx314694qhs", location: "Texas Node" },
-    { ip: "207.244.246.180:10100:tx2414fs:tx49753af", location: "Texas 2 Node" },
-    { ip: "74.208.77.177:9005:tx54f42dsf:tx3497twsd", location: "Texas 3 Node" },
-    { ip: "67.217.244.189:9093:tx24f4d2:tx964fdsa", location: "Texas 4 Node" },
-    { ip: "67.217.243.124:5039:ny21141:ny975461yw", location: "New York  Node" },
-    { ip: "67.217.244.3:5700:ca414452:ca85216wer", location: "California Node" },
-    { ip: "67.217.244.189:5804:ca1441fs:cf354fa94", location: "California 2 Node" },
-    { ip: "209.126.11.99:7000:ca44541d4we:ca854twed", location: "California 3 Node" },
-    { ip: "67.217.243.238:6063:il1545d2:g6as5f78saf", location: "Georgia Node" },
-    { ip: "67.217.244.3:9001:fl144sa5:f65asf79", location: "Florida Node" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
