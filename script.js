@@ -400,7 +400,7 @@ function downloadZipFile() {
       zipFileName = 'Shimul.zip';
       break;
     case 'ifaz3d':
-      zipFileName = 'ifaz.zip';
+      zipFileName = 'Ifaz.zip';
       break;
     case 'Shakil24':
       zipFileName = 'Shakil.zip';
