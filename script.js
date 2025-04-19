@@ -4,28 +4,18 @@ let currentUser = null;
 // Password Database
 const users = {
   nokib3d: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   borhan2df: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tanbir4d: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   riyad33f: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   noyon7fd: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tt: [
@@ -34,45 +24,43 @@ const users = {
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   alif9g: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   hridoy39: [
-    { ip: "                 23 March 2025               ", location: "Birth" },
-    { ip: "                 21 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tonmoy224: [
-    { ip: "                 23 March 2025               ", location: "Birth" },
-    { ip: "                 21 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   nibir3d: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   shimul3d: [
-    { ip: "                 26 March 2025               ", location: "Birth" },
-    { ip: "                 24 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   ifaz3d: [
-    { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
-    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   Shakil24: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  sistuhin: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  sisshakil: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  sissajjad: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+  g: [
     { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
     { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-    g: [
+  g: [
     { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
     { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
     { ip: "                 18 March 2025               ", location: "Birth" },
@@ -421,14 +409,14 @@ function downloadZipFile() {
     case 'Shakil24':
       zipFileName = 'Shakil.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'sistuhin':
+      zipFileName = 'Sistuhin.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'sisshakil':
+      zipFileName = 'Sisshakil.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'sissajjad':
+      zipFileName = 'Sissajjad.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
