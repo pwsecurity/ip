@@ -18,9 +18,7 @@ const users = {
   noyon7fd: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  tt: [
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
+  tawsif55: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   alif9g: [
@@ -378,8 +376,8 @@ function downloadZipFile() {
     case 'noyon7fd':
       zipFileName = 'Noyon.zip';
       break;
-    case 'tt':
-      zipFileName = 'tt.zip';
+    case 'tawsif55':
+      zipFileName = 'Tawsif.zip';
       break;
     case 'alif9g':
       zipFileName = 'Alif.zip';
