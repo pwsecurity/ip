@@ -30,7 +30,7 @@ const users = {
   tonmoy224: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  jj: [
+  Shaikat009: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   shimul3d: [
@@ -388,8 +388,8 @@ function downloadZipFile() {
     case 'tonmoy224':
       zipFileName = 'Tonmoy.zip';
       break;
-    case 'jj':
-      zipFileName = 'jj.zip';
+    case 'Shaikat009':
+      zipFileName = 'Shaikat.zip';
       break;
     case 'niloy3d':
       zipFileName = 'Niloy.zip';
