@@ -93,13 +93,13 @@ const users = {
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  nehal3d: [
+  fgf: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   taha3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  rakib3d: [
+  fff: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   niloy3d: [
@@ -421,14 +421,14 @@ function downloadZipFile() {
     case 'g':
       zipFileName = 'g.zip';
       break;
-    case 'nehal3d':
-      zipFileName = 'Nehal.zip';
+    case 'g':
+      zipFileName = 'g.zip';
       break;
     case 'taha3d':
       zipFileName = 'Taha.zip';
       break;
-    case 'rakib3d':
-      zipFileName = 'Rakib.zip';
+    case 'g':
+      zipFileName = 'g.zip';
       break;
     case 'comon':
       zipFileName = 'comon.zip';
