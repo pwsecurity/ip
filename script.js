@@ -54,11 +54,7 @@ const users = {
   irfan3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  g: [
-    { ip: "67.217.243.238:10580:ca24fd14ds:cgh5dgfv", location: "California 2 NODE" },
-    { ip: "67.217.244.5:9050:ny054czvrfd:cs46f4wef", location: "New York  NODE" },
-    { ip: "                 18 March 2025               ", location: "Birth" },
-    { ip: "                 16 April 2025               ", location: "Death" },
+  jakir3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
     g: [
@@ -411,8 +407,8 @@ function downloadZipFile() {
     case 'irfan3d':
       zipFileName = 'Irfan.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'jakir3d':
+      zipFileName = 'Jakir.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
