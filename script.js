@@ -54,7 +54,7 @@ const users = {
   irfan3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  jakir3d: [
+  mehedi3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
     g: [
@@ -407,8 +407,8 @@ function downloadZipFile() {
     case 'irfan3d':
       zipFileName = 'Irfan.zip';
       break;
-    case 'jakir3d':
-      zipFileName = 'Jakir.zip';
+    case 'mehedi3d':
+      zipFileName = 'Mehedi.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
