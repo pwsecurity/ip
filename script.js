@@ -91,6 +91,30 @@ const users = {
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    arman3d: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    azmir3d: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    tasbi3d: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
   com1: [
     { ip: "147.135.129.37:10115:QVDaS:3vW6p", location: "Primary Node" },
     { ip: "74.208.205.97:9001:tx5747df5s:tx314694qhs", location: "Texas Node" },
@@ -428,6 +452,33 @@ function downloadZipFile() {
       break;
     case 'g':
       zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'g':
+      zipFileName = 'g.zip';
+      break;
+    case 'arman3d':
+      zipFileName = 'Arman.zip';
+      break;
+    case 'azmir3d':
+      zipFileName = 'Azmir.zip';
+      break;
+    case 'tasbi3d':
+      zipFileName = 'Tasbi.zip';
       break;
     case 'comon':
       zipFileName = 'comon.zip';
