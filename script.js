@@ -24,7 +24,7 @@ const users = {
   alif9g: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  hridoy39: [
+  bayezid3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   tonmoy224: [
@@ -386,8 +386,8 @@ function downloadZipFile() {
     case 'alif9g':
       zipFileName = 'Alif.zip';
       break;
-    case 'hridoy39':
-      zipFileName = 'Hridoy.zip';
+    case 'bayezid3d':
+      zipFileName = 'Bayezid.zip';
       break;
     case 'tonmoy224':
       zipFileName = 'Tonmoy.zip';
