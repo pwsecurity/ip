@@ -27,7 +27,7 @@ const users = {
   bokhtear3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  tonmoy224: [
+  mushfiq3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   Shaikat009: [
@@ -389,8 +389,8 @@ function downloadZipFile() {
     case 'bokhtear3d':
       zipFileName = 'Bokhtear.zip';
       break;
-    case 'tonmoy224':
-      zipFileName = 'Tonmoy.zip';
+    case 'mushfiq3d':
+      zipFileName = 'Mushfiq.zip';
       break;
     case 'Shaikat009':
       zipFileName = 'Shaikat.zip';
