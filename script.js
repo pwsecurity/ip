@@ -99,7 +99,7 @@ const users = {
     fff: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-    farhan3d: [
+    meherab3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
     arman3d: [
@@ -464,8 +464,8 @@ function downloadZipFile() {
     case 'g':
       zipFileName = 'g.zip';
       break;
-    case 'farhan3d':
-      zipFileName = 'Farhan.zip';
+    case 'meherab3d':
+      zipFileName = 'Meherab.zip';
       break;
     case 'arman3d':
       zipFileName = 'Arman.zip';
