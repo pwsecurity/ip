@@ -9,7 +9,7 @@ const users = {
   borhan2df: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  tanbir4d: [
+  ashrafi3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   riyad33f: [
@@ -367,8 +367,8 @@ function downloadZipFile() {
     case 'borhan2df':
       zipFileName = 'Borhan.zip';
       break;
-    case 'tanbir4d':
-      zipFileName = 'Tanbir.zip';
+    case 'ashrafi3d':
+      zipFileName = 'Ashrafi.zip';
       break;
     case 'riyad33f':
       zipFileName = 'Riyad.zip';
