@@ -69,7 +69,7 @@ const users = {
   motiur3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  fgf: [
+  tanbir3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   hhh: [
@@ -430,8 +430,8 @@ function downloadZipFile() {
     case 'motiur3d':
       zipFileName = 'Motiur.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'tanbir3d':
+      zipFileName = 'Tanbir.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
