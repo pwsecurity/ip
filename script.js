@@ -33,7 +33,7 @@ const users = {
   Shaikat009: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  shimul3d: [
+  maimran3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   ifaz3d: [
@@ -394,8 +394,8 @@ function downloadZipFile() {
     case 'niloy3d':
       zipFileName = 'Niloy.zip';
       break;
-    case 'shimul3d':
-      zipFileName = 'Shimul.zip';
+    case 'maimran3d':
+      zipFileName = 'MAimran.zip';
       break;
     case 'ifaz3d':
       zipFileName = 'Ifaz.zip';
