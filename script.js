@@ -72,7 +72,7 @@ const users = {
   tanbir3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  hhh: [
+  emon45d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
   fff: [
@@ -433,8 +433,8 @@ function downloadZipFile() {
     case 'tanbir3d':
       zipFileName = 'Tanbir.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'emon45d':
+      zipFileName = 'Emon.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
