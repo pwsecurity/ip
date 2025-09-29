@@ -75,10 +75,10 @@ const users = {
   emon45d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  fff: [
+  mejba3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-  jjj: [
+  safayat3d: [
     { ip: "                 18 March 2025               ", location: "Birth" },
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
@@ -436,11 +436,11 @@ function downloadZipFile() {
     case 'emon45d':
       zipFileName = 'Emon.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'mejba3d':
+      zipFileName = 'Mejba.zip';
       break;
-    case 'taha3d':
-      zipFileName = 'Taha.zip';
+    case 'safayat3d':
+      zipFileName = 'Safayat.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
