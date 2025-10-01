@@ -83,7 +83,7 @@ const users = {
     { ip: "                 16 April 2025               ", location: "Death" },
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-    fff: [
+    rezaul3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
     fff: [
@@ -442,8 +442,8 @@ function downloadZipFile() {
     case 'safayat3d':
       zipFileName = 'Safayat.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'rezaul3d':
+      zipFileName = 'Rezaul.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
