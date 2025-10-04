@@ -84,7 +84,7 @@ const users = {
     rezaul3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
-    fff: [
+    ashraful: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
     fff: [
@@ -443,8 +443,8 @@ function downloadZipFile() {
     case 'rezaul3d':
       zipFileName = 'Rezaul.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'ashraful':
+      zipFileName = 'Ashraful.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
