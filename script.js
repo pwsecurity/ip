@@ -90,6 +90,15 @@ const users = {
     hridoy3d: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
+    tamim3d: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
+    fff: [
+    { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
+  ],
     fff: [
     { ip: "https://drive.google.com/drive/folders/1RG_C7VNh6a8WPOH-ojtnm_b-h3CVmg3Y?usp=sharing", location: "Drive Link" }
   ],
@@ -449,8 +458,8 @@ function downloadZipFile() {
     case 'hridoy3d':
       zipFileName = 'Hridoy.zip';
       break;
-    case 'g':
-      zipFileName = 'g.zip';
+    case 'tamim3d':
+      zipFileName = 'Tamim.zip';
       break;
     case 'g':
       zipFileName = 'g.zip';
